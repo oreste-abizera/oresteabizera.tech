@@ -90,6 +90,12 @@
   .socialIcons a {
     margin-right: 10px;
     color: var(--primaryColor);
+    transition: var(--mainTransition);
+  }
+
+  .socialIcons a:hover {
+    color: var(--mainBlack);
+    transform: translateY(-5px);
   }
 
   .socialIcons a svg {
