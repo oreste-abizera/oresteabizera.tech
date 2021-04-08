@@ -10,7 +10,7 @@ export default class AboutMe extends Component {
         <Title first="About" last="Me"></Title>
         <div className={styles.info}>
           <div>
-            <img src={img} className={styles.aboutImage}></img>
+            <img src={img} className={styles.aboutImage} alt="Profile"></img>
           </div>
           <div></div>
         </div>
