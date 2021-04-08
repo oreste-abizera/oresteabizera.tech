@@ -8,6 +8,7 @@
   --primaryColor: #3fd0d4;
   --mainBlack: #222;
   --mainTransition: all 0.3s linear;
+  --mainSpacing: 4px;
 }
 
 .main {
@@ -15,7 +16,7 @@
 }
 
 .navbar {
-  height: 60px;
+  min-height: 60px;
 }
 
 .footer {

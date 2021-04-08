@@ -34,6 +34,40 @@
   cursor: pointer;
 }
 
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
+.links a {
+  display: block;
+  padding: 0.5rem 0rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--mainBlack);
+  transition: var(--mainTransition);
+  font-weight: bold;
+  letter-spacing: var(--mainSpacing);
+}
+
+.links a:hover {
+  color: var(--primaryColor);
+}
+
+@media screen and (max-width: 992px) {
+  .navbarShown {
+    position: relative;
+    height: 200px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .links {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .navToggler {
     display: none;
@@ -56,5 +90,14 @@
 
   .socialIcons a svg {
     font-size: 23px;
+  }
+
+  .links {
+    flex-direction: row;
+  }
+
+  .links a {
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
 }
