@@ -1,0 +1,25 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.25rem;
+}
+
+.logo {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.logo span {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.logo span:first-child {
+  margin-right: 3px;
+  color: var(--mainBlack);
+}
+
+.logo span:last-child {
+  color: var(--primaryColor);
+}

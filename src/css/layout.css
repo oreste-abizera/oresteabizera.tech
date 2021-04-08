@@ -3,6 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --primaryColor: #3fd0d4;
+  --mainBlack: #222;
+  --mainTransition: all 0.3s linear;
+}
+
 .main {
   min-height: calc(100vh - 160px);
 }
