@@ -1,5 +1,11 @@
 import React from "react"
-import { FaDev, FaTwitterSquare, FaInstagram, FaLinkedin } from "react-icons/fa"
+import {
+  FaDev,
+  FaTwitterSquare,
+  FaInstagramSquare,
+  FaLinkedin,
+  FaGithubSquare,
+} from "react-icons/fa"
 const icons = [
   {
     icon: <FaDev />,
@@ -10,11 +16,15 @@ const icons = [
     url: "https://twitter.com/?lang=en",
   },
   {
-    icon: <FaInstagram />,
+    icon: <FaInstagramSquare />,
     url: "https://twitter.com/?lang=en",
   },
   {
     icon: <FaLinkedin />,
+    url: "https://twitter.com/?lang=en",
+  },
+  {
+    icon: <FaGithubSquare />,
     url: "https://twitter.com/?lang=en",
   },
 ]
