@@ -62,7 +62,11 @@
     margin-bottom: 20px;
   }
 
-  .links {
+  .navbarHidden .links {
+    display: none;
+  }
+
+  .navbarShown .links {
     position: absolute;
     bottom: 0;
   }

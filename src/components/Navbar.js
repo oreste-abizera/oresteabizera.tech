@@ -9,14 +9,23 @@ export default class Navbar extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      isOpen: true,
+      isOpen: false,
       socialIcons,
       links,
     }
   }
   render() {
+    const toggleNavbar = () => {
+      this.setState({ isOpen: !this.state.isOpen })
+    }
     return (
-      <nav className={`navbar ${styles.navbar} ${styles.navbarShown}`}>
+      <nav
+        className={
+          this.state.isOpen
+            ? `navbar ${styles.navbar} ${styles.navbarShown}`
+            : `navbar ${styles.navbar} ${styles.navbarHidden}`
+        }
+      >
         <Link to="/#home" className={styles.logo}>
           <span>A</span>
           <span>O</span>
@@ -29,7 +38,10 @@ export default class Navbar extends Component {
           ))}
         </div>
         <div>
-          <FaAlignRight className={styles.navToggler}></FaAlignRight>
+          <FaAlignRight
+            className={styles.navToggler}
+            onClick={toggleNavbar}
+          ></FaAlignRight>
           <div className={styles.socialIcons}>
             {this.state.socialIcons.map((icon, index) => (
               <Link key={index} to={icon.url} target="_blank">
