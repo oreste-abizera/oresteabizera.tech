@@ -20,7 +20,7 @@
 }
 
 .footer {
-  height: 100px;
+  min-height: 100px;
   width: 100%;
   color: #ffffff;
   background-color: #000000;
