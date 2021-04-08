@@ -10,9 +10,12 @@
 }
 
 .info > div {
-  width: 90%;
+  width: 95%;
   min-height: 20rem;
   margin: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .info > div:first-child {
@@ -28,6 +31,12 @@
   bottom: -0.5rem;
   left: 0.5rem;
   background: linear-gradient(#1e7e85, rgba(231, 57, 57, 0.7));
+}
+
+.discover p {
+  margin: 1.5rem 0;
+  line-height: 1.5rem;
+  font-size: 17px;
 }
 @media screen and (min-width: 596px) {
   .info > div {
