@@ -62,3 +62,10 @@
   background: transparent;
   color: var(--primaryColor);
 }
+
+@media screen and (min-width: 675px) {
+  .hero {
+    background: linear-gradient(#1e7e85, rgba(0, 0, 0, 0.7)),
+      url("../images/defaultBg1.jpg") center/cover no-repeat;
+  }
+}

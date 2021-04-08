@@ -23,7 +23,13 @@ export default class Home extends Component {
             >
               Hi there,
             </div>
-            <div style={{ fontSize: "18px", letterSpacing: "1.5px" }}>
+            <div
+              style={{
+                fontSize: "18px",
+                letterSpacing: "1.5px",
+                color: "#ffffff",
+              }}
+            >
               I'm Abizera Oreste
             </div>
           </section>
