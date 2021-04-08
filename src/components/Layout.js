@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import Footer from "./Footer"
 import Navbar from "./Navbar"
 
 export default class Layout extends Component {
@@ -7,6 +8,7 @@ export default class Layout extends Component {
       <React.Fragment>
         <Navbar />
         <main>{this.props.children}</main>
+        <Footer />
       </React.Fragment>
     )
   }
