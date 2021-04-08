@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import React, { Component } from "react"
 import * as styles from "../css/navbar.module.css"
+import { FaAlignRight } from "react-icons/fa"
 
 export default class Navbar extends Component {
   constructor(props) {
@@ -16,6 +17,9 @@ export default class Navbar extends Component {
           <span>A</span>
           <span>O</span>
         </Link>
+        <div className={styles.rightIcons}>
+          <FaAlignRight></FaAlignRight>
+        </div>
       </nav>
     )
   }
