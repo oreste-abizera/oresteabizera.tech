@@ -23,3 +23,38 @@
 .logo span:last-child {
   color: var(--primaryColor);
 }
+
+.socialIcons {
+  display: none;
+}
+
+.navToggler {
+  font-size: 25px;
+  color: var(--primaryColor);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 992px) {
+  .navToggler {
+    display: none;
+  }
+
+  .navbar {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .socialIcons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .socialIcons a {
+    margin-right: 10px;
+    color: var(--primaryColor);
+  }
+
+  .socialIcons a svg {
+    font-size: 23px;
+  }
+}
