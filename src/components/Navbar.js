@@ -44,9 +44,9 @@ export default class Navbar extends Component {
           ></FaAlignRight>
           <div className={styles.socialIcons}>
             {this.state.socialIcons.map((icon, index) => (
-              <Link key={index} to={icon.url} target="_blank">
+              <a key={index} href={icon.url} target="_blank" rel="noreferrer">
                 {icon.icon}
-              </Link>
+              </a>
             ))}
           </div>
         </div>

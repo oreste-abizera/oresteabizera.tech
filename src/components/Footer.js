@@ -16,9 +16,9 @@ export default class Footer extends Component {
         </div>
         <div className={styles.socialIcons}>
           {socialIcons.map((icon, index) => (
-            <Link key={index} to={icon.url} target="_blank">
+            <a key={index} href={icon.url} target="_blank" rel="noreferrer">
               {icon.icon}
-            </Link>
+            </a>
           ))}
         </div>
         <div className={styles.copyright}>
