@@ -23,7 +23,7 @@
   min-height: 100px;
   width: 100%;
   color: #ffffff;
-  background-color: #000000;
+  background-color: var(--mainBlack);
   display: flex;
   justify-content: center;
   align-items: center;
