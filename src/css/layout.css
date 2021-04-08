@@ -37,3 +37,28 @@
   justify-content: center;
   align-items: center;
 }
+
+.btn-white,
+.btn-primary {
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 0.9rem 1.6rem;
+  display: inline-block;
+  transition: var(--mainTransition);
+  cursor: pointer;
+}
+.btn-white:hover {
+  background: #ffffff;
+  color: var(--primaryColor);
+}
+.btn-primary {
+  background: var(--primaryColor);
+  color: #ffffff;
+  border: 2px solid var(--primaryColor);
+}
+.btn-primary:hover {
+  background: transparent;
+  color: var(--primaryColor);
+}
