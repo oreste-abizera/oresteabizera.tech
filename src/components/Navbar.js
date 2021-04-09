@@ -25,6 +25,7 @@ export default class Navbar extends Component {
             ? `navbar ${styles.navbar} ${styles.navbarShown}`
             : `navbar ${styles.navbar} ${styles.navbarHidden}`
         }
+        id="home"
       >
         <Link to="/#home" className={styles.logo} title="ABIZERA Oreste">
           <span>A</span>
