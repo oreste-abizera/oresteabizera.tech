@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import AboutMe from "../components/AboutMe"
+import ContactMe from "../components/ContactMe"
 import Hero from "../components/Hero"
 import Layout from "../components/Layout"
 export default class Home extends Component {
@@ -36,6 +37,7 @@ export default class Home extends Component {
           </section>
         </Hero>
         <AboutMe></AboutMe>
+        <ContactMe></ContactMe>
       </Layout>
     )
   }
