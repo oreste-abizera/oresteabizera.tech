@@ -33,6 +33,7 @@
   bottom: -0.5rem;
   left: 0.5rem;
   background: linear-gradient(#1e7e85, rgba(231, 57, 57, 0.7));
+  transition: var(--mainTransition);
 }
 
 .discover p {
@@ -62,5 +63,9 @@
   .info > div {
     width: 35%;
     min-height: 20rem;
+  }
+  .info > div:first-child:hover .aboutImage {
+    bottom: 0rem;
+    left: 0rem;
   }
 }

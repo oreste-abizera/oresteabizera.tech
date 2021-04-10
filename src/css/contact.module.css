@@ -25,7 +25,7 @@
   position: relative;
 }
 
-.aboutImage {
+.contactImage {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -33,6 +33,7 @@
   bottom: -0.5rem;
   right: 0.5rem;
   background: linear-gradient(#1e7e85, rgba(231, 57, 57, 0.7));
+  transition: var(--mainTransition);
 }
 
 .discover p {
@@ -63,5 +64,9 @@
   .info > div {
     width: 35%;
     min-height: 23rem;
+  }
+  .info > div:first-child:hover .contactImage {
+    bottom: 0rem;
+    right: 0rem;
   }
 }

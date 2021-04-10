@@ -10,7 +10,7 @@ export default class ContactMe extends Component {
         <Title first="Talk" last="to me"></Title>
         <div className={styles.info}>
           <div>
-            <img src={img} className={styles.aboutImage} alt="Profile"></img>
+            <img src={img} className={styles.contactImage} alt="Profile"></img>
           </div>
           <div className={styles.discover}>
             <h2>SOCIAL NETWORKS</h2>
