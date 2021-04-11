@@ -28,7 +28,6 @@ const projects = [
     slug: "con-fusion",
   },
   {
-    id: 7,
     title: "Markdown Preview",
     url: "https://react-markdownpreview.netlify.app/",
     social_image:
@@ -36,3 +35,5 @@ const projects = [
     slug: "markdown-preview",
   },
 ]
+
+export default projects

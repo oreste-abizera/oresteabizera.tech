@@ -3,6 +3,7 @@ import AboutMe from "../components/AboutMe"
 import ContactMe from "../components/ContactMe"
 import Hero from "../components/Hero"
 import Layout from "../components/Layout"
+import Projects from "../components/Projects"
 export default class Home extends Component {
   render() {
     return (
@@ -37,6 +38,7 @@ export default class Home extends Component {
           </section>
         </Hero>
         <AboutMe></AboutMe>
+        <Projects></Projects>
         <ContactMe></ContactMe>
       </Layout>
     )
