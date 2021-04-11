@@ -34,7 +34,25 @@ export default class SingleProject extends Component {
             </header>
           </>
         ) : (
-          <p>hello from single project page</p>
+          <div className={styles.projectInfo}>
+            <h2>{currentProject.title}</h2>
+            <div>
+              <h2>Images</h2>
+              {[1, 2, 3].map((value, index) => (
+                <div className={styles.imageContainer}>
+                  <img
+                    key={index}
+                    src={currentProject.social_image}
+                    alt={currentProject.title}
+                    className={styles.projectImage}
+                  ></img>
+                </div>
+              ))}
+            </div>
+            <div>
+              <h4>description</h4>
+            </div>
+          </div>
         )}
       </Layout>
     )
