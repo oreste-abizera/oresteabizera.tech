@@ -56,6 +56,13 @@
   }
 }
 
+@media screen and (max-width: 992px) {
+  .info > div:first-child .aboutImage {
+    bottom: 0rem;
+    left: 0rem;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .info {
     flex-direction: row;
