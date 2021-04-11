@@ -34,25 +34,30 @@ export default class SingleProject extends Component {
             </header>
           </>
         ) : (
-          <div className={styles.projectInfo}>
-            <h2>{currentProject.title}</h2>
-            <div>
-              <h2>Images</h2>
-              {[1, 2, 3].map((value, index) => (
-                <div className={styles.imageContainer}>
-                  <img
-                    key={index}
-                    src={currentProject.social_image}
-                    alt={currentProject.title}
-                    className={styles.projectImage}
-                  ></img>
-                </div>
-              ))}
+          <>
+            <header className={styles.projectHero}>
+              {/* <h2>{currentProject.title}</h2> */}
+              <Banner title={currentProject.title}></Banner>
+            </header>
+            <div className={styles.projectInfo}>
+              <div>
+                <h2>Images</h2>
+                {[1, 2, 3].map((value, index) => (
+                  <div className={styles.imageContainer}>
+                    <img
+                      key={index}
+                      src={currentProject.social_image}
+                      alt={currentProject.title}
+                      className={styles.projectImage}
+                    ></img>
+                  </div>
+                ))}
+              </div>
+              <div>
+                <h2>Project info</h2>
+              </div>
             </div>
-            <div>
-              <h4>description</h4>
-            </div>
-          </div>
+          </>
         )}
       </Layout>
     )
