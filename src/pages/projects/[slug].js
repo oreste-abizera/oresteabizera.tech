@@ -126,6 +126,9 @@ export default class SingleProject extends Component {
                 </div>
                 <div>
                   <h2>Project info</h2>
+                  <p className={styles.description}>
+                    {currentProject.description}
+                  </p>
                 </div>
               </div>
             </>
