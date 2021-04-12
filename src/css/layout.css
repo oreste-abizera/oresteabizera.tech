@@ -70,4 +70,7 @@
     background: linear-gradient(#1e7e85, rgba(0, 0, 0, 0.7)),
       url("../images/bg2.jpg") center/cover no-repeat;
   }
+  /* .main {
+    margin-top: 60px;
+  } */
 }
