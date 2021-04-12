@@ -9,6 +9,7 @@ const projects = [
     slug: "whatsapp-clone",
     type: "Web",
     images: [],
+    technologies: ["React js", "Firebase", "Material ui"],
   },
   {
     title: "Redux Cart",
@@ -20,6 +21,7 @@ const projects = [
     slug: "redux-cart",
     type: "Web",
     images: [],
+    technologies: ["React js", "Redux"],
   },
   {
     title: "Upcrew School",
@@ -31,6 +33,14 @@ const projects = [
     slug: "upcrew",
     type: "Web",
     images: [],
+    technologies: [
+      "React js",
+      "Styled components",
+      "Bootstrap",
+      "Node js",
+      "Express",
+      "MongoDB",
+    ],
   },
   {
     title: "Con Fusion",
@@ -41,6 +51,7 @@ const projects = [
     slug: "con-fusion",
     type: "Web",
     images: [],
+    technologies: ["React js"],
   },
   {
     title: "Markdown Preview",
@@ -52,6 +63,7 @@ const projects = [
     slug: "markdown-preview",
     type: "Web",
     images: [],
+    technologies: ["React js"],
   },
 ]
 

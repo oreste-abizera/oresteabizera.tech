@@ -129,6 +129,13 @@ export default class SingleProject extends Component {
                   <p className={styles.description}>
                     {currentProject.description}
                   </p>
+                  <h3>Technologies</h3>
+                  <ul className={styles.technologiesList}>
+                    {currentProject.technologies.map((technology, index) => (
+                      <li key={index}>{technology}</li>
+                    ))}
+                  </ul>
+                  <p>here</p>
                 </div>
               </div>
             </>
