@@ -11,6 +11,7 @@ export default class SingleProject extends Component {
     super(props)
     this.state = {
       projects,
+      selectedImage: null,
     }
   }
   render() {
@@ -18,6 +19,13 @@ export default class SingleProject extends Component {
     const currentProject = this.state.projects.find(
       project => project.slug === slug
     )
+
+    const changeSelectedImage = (newImage = null) => {
+      this.setState({
+        ...this.state,
+        selectedImage: newImage,
+      })
+    }
     return (
       <Layout>
         {!currentProject ? (
@@ -45,12 +53,13 @@ export default class SingleProject extends Component {
                 <h2>Images</h2>
                 {[currentProject.social_image, ...currentProject.images].map(
                   (value, index) => (
-                    <div className={styles.imageContainer}>
+                    <div className={styles.imageContainer} key={index}>
                       <div className={styles.imageHover}>
-                        <FaEye></FaEye>
+                        <FaEye
+                          onClick={() => changeSelectedImage(value)}
+                        ></FaEye>
                       </div>
                       <img
-                        key={index}
                         src={value}
                         alt={currentProject.title}
                         className={styles.projectImage}
@@ -61,6 +70,7 @@ export default class SingleProject extends Component {
               </div>
               <div>
                 <h2>Project info</h2>
+                <p>{this.state.selectedImage}</p>
               </div>
             </div>
           </>
