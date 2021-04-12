@@ -104,6 +104,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   position: relative;
 }
 
@@ -117,8 +118,14 @@
 }
 
 .modalImageContainer > img {
-  max-height: 95%;
-  max-width: 95%;
+  max-height: 90%;
+  max-width: 90%;
+}
+
+.imageNavigation {
+  width: 90%;
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (min-width: 992px) {

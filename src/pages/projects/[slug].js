@@ -11,7 +11,7 @@ export default class SingleProject extends Component {
     super(props)
     this.state = {
       projects,
-      selectedImage: null,
+      selectedImage: 0,
     }
   }
   render() {
@@ -26,16 +26,33 @@ export default class SingleProject extends Component {
         selectedImage: newImage,
       })
     }
+
+    const displayImages = [
+      currentProject.social_image,
+      ...currentProject.images,
+    ]
+
+    const { selectedImage } = this.state
+
     return (
       <>
-        {this.state.selectedImage && (
+        {selectedImage !== null && (
           <div className={styles.modal}>
             <div className={styles.modalImageContainer}>
               <FaTimes onClick={() => changeSelectedImage()}></FaTimes>
               <img
-                src={this.state.selectedImage}
+                src={displayImages[selectedImage]}
                 alt={currentProject.title}
               ></img>
+              <div className={styles.imageNavigation}>
+                <p>
+                  <span style={{ color: "var(--primaryColor)" }}>
+                    {" "}
+                    {selectedImage + 1} /
+                  </span>{" "}
+                  {displayImages.length} images
+                </p>
+              </div>
             </div>
           </div>
         )}
@@ -63,22 +80,20 @@ export default class SingleProject extends Component {
               <div className={styles.projectInfo}>
                 <div>
                   <h2>Images</h2>
-                  {[currentProject.social_image, ...currentProject.images].map(
-                    (value, index) => (
-                      <div className={styles.imageContainer} key={index}>
-                        <div className={styles.imageHover}>
-                          <FaEye
-                            onClick={() => changeSelectedImage(value)}
-                          ></FaEye>
-                        </div>
-                        <img
-                          src={value}
-                          alt={currentProject.title}
-                          className={styles.projectImage}
-                        ></img>
+                  {displayImages.map((value, index) => (
+                    <div className={styles.imageContainer} key={index}>
+                      <div className={styles.imageHover}>
+                        <FaEye
+                          onClick={() => changeSelectedImage(index)}
+                        ></FaEye>
                       </div>
-                    )
-                  )}
+                      <img
+                        src={value}
+                        alt={currentProject.title}
+                        className={styles.projectImage}
+                      ></img>
+                    </div>
+                  ))}
                 </div>
                 <div>
                   <h2>Project info</h2>
