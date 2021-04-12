@@ -155,6 +155,19 @@
   margin: 0 0 1rem 1rem;
 }
 
+.iconLinks svg {
+  color: var(--primaryColor);
+  font-size: 21px;
+  margin: 0 0.5rem 0 0;
+  cursor: pointer;
+  transition: var(--mainTransition);
+}
+
+.iconLinks svg:hover {
+  transform: translateY(-5px);
+  color: var(--mainBlack);
+}
+
 @media screen and (min-width: 480px) {
   .modalImageContainer > svg.navigationIcon {
     font-size: 30px;

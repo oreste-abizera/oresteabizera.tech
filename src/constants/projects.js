@@ -10,6 +10,8 @@ const projects = [
     type: "Web",
     images: [],
     technologies: ["React js", "Firebase", "Material ui"],
+    github_url: "https://github.com/oreste-abizera/whatsapp-clone",
+    site_url: "https://ao-whatsapp-clone.netlify.app/",
   },
   {
     title: "Redux Cart",
@@ -41,6 +43,8 @@ const projects = [
       "Express",
       "MongoDB",
     ],
+    github_url: "https://github.com/oreste-abizera/upcrew",
+    site_url: "https://upcrew.netlify.app/",
   },
   {
     title: "Con Fusion",
@@ -52,6 +56,7 @@ const projects = [
     type: "Web",
     images: [],
     technologies: ["React js"],
+    github_url: "https://github.com/oreste-abizera/confusion",
   },
   {
     title: "Markdown Preview",

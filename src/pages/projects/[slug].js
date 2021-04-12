@@ -1,6 +1,13 @@
 import { Link } from "gatsby"
 import React, { Component } from "react"
-import { FaAngleLeft, FaAngleRight, FaEye, FaTimes } from "react-icons/fa"
+import {
+  FaAngleLeft,
+  FaAngleRight,
+  FaEye,
+  FaGithub,
+  FaGlobe,
+  FaTimes,
+} from "react-icons/fa"
 import Banner from "../../components/Banner"
 import Layout from "../../components/Layout"
 import projects from "../../constants/projects"
@@ -135,7 +142,26 @@ export default class SingleProject extends Component {
                       <li key={index}>{technology}</li>
                     ))}
                   </ul>
-                  <p>here</p>
+                  <div className={styles.iconLinks}>
+                    {currentProject.github_url && (
+                      <a
+                        href={currentProject.github_url}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <FaGithub></FaGithub>
+                      </a>
+                    )}
+                    {currentProject.site_url && (
+                      <a
+                        href={currentProject.site_url}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <FaGlobe></FaGlobe>
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
             </>
