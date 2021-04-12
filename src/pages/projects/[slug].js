@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
 import React, { Component } from "react"
-import { FaEye, FaTimes } from "react-icons/fa"
+import { FaAngleLeft, FaAngleRight, FaEye, FaTimes } from "react-icons/fa"
 import Banner from "../../components/Banner"
 import Layout from "../../components/Layout"
 import projects from "../../constants/projects"
@@ -11,7 +11,7 @@ export default class SingleProject extends Component {
     super(props)
     this.state = {
       projects,
-      selectedImage: 0,
+      selectedImage: null,
     }
   }
   render() {
@@ -20,6 +20,11 @@ export default class SingleProject extends Component {
       project => project.slug === slug
     )
 
+    const displayImages = [
+      currentProject.social_image,
+      ...currentProject.images,
+    ]
+
     const changeSelectedImage = (newImage = null) => {
       this.setState({
         ...this.state,
@@ -27,10 +32,23 @@ export default class SingleProject extends Component {
       })
     }
 
-    const displayImages = [
-      currentProject.social_image,
-      ...currentProject.images,
-    ]
+    const previousImage = () => {
+      if (this.state.selectedImage > 0) {
+        this.setState({
+          ...this.state,
+          selectedImage: this.state.selectedImage - 1,
+        })
+      }
+    }
+
+    const nextImage = () => {
+      if (this.state.selectedImage < displayImages.length - 1) {
+        this.setState({
+          ...this.state,
+          selectedImage: this.state.selectedImage + 1,
+        })
+      }
+    }
 
     const { selectedImage } = this.state
 
@@ -39,11 +57,22 @@ export default class SingleProject extends Component {
         {selectedImage !== null && (
           <div className={styles.modal}>
             <div className={styles.modalImageContainer}>
-              <FaTimes onClick={() => changeSelectedImage()}></FaTimes>
+              <FaTimes
+                className={styles.close}
+                onClick={() => changeSelectedImage()}
+              ></FaTimes>
+              <FaAngleLeft
+                onClick={previousImage}
+                className={styles.navigationIcon}
+              ></FaAngleLeft>
               <img
                 src={displayImages[selectedImage]}
                 alt={currentProject.title}
               ></img>
+              <FaAngleRight
+                onClick={nextImage}
+                className={styles.navigationIcon}
+              ></FaAngleRight>
               <div className={styles.imageNavigation}>
                 <p>
                   <span style={{ color: "var(--primaryColor)" }}>
