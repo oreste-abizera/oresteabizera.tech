@@ -1,0 +1,11 @@
+.scrollToTopContainer > svg {
+  position: fixed;
+  bottom: 0.2rem;
+  right: 0.2rem;
+  background-color: var(--primaryColor);
+  color: #ffffff;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
