@@ -53,10 +53,31 @@
   border-radius: 5px;
   transition: var(--mainTransition);
   margin-top: 1rem;
+  position: relative;
+}
+
+.imageHover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.imageHover svg {
+  font-size: 34px;
+  color: var(--primaryColor);
+  cursor: pointer;
 }
 
 .imageContainer:hover {
   transform: translateY(-5px);
+}
+
+.imageContainer:hover .imageHover {
+  display: flex;
 }
 
 .projectImage {

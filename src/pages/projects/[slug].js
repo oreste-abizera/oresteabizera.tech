@@ -1,5 +1,6 @@
 import { Link } from "gatsby"
 import React, { Component } from "react"
+import { FaEye } from "react-icons/fa"
 import Banner from "../../components/Banner"
 import Layout from "../../components/Layout"
 import projects from "../../constants/projects"
@@ -42,16 +43,21 @@ export default class SingleProject extends Component {
             <div className={styles.projectInfo}>
               <div>
                 <h2>Images</h2>
-                {[1, 2, 3].map((value, index) => (
-                  <div className={styles.imageContainer}>
-                    <img
-                      key={index}
-                      src={currentProject.social_image}
-                      alt={currentProject.title}
-                      className={styles.projectImage}
-                    ></img>
-                  </div>
-                ))}
+                {[currentProject.social_image, ...currentProject.images].map(
+                  (value, index) => (
+                    <div className={styles.imageContainer}>
+                      <div className={styles.imageHover}>
+                        <FaEye></FaEye>
+                      </div>
+                      <img
+                        key={index}
+                        src={value}
+                        alt={currentProject.title}
+                        className={styles.projectImage}
+                      ></img>
+                    </div>
+                  )
+                )}
               </div>
               <div>
                 <h2>Project info</h2>
