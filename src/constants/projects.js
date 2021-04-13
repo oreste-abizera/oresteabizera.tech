@@ -14,7 +14,7 @@ const projects = [
   {
     title: "ExTra",
     description:
-      "ExTra is an application which helps you to track your daily incomes and expenses.",
+      "ExTra is an application which helps you to track your daily incomes and expenses. A user is able to record his/her income or expense anytime. When there is no internet connection available on the user's phone, there is an option of saving the transaction locally. A user can view the transactions made on a given day and he/she can delete any one if it is the choice. There is online syncing in this app: When a user has saved transactions locally they will be synced to his/her account when the internet is available.",
     social_image: ExTra1,
     slug: "ExTra",
     type: "Mobile application",

@@ -43,6 +43,10 @@
   /* text-decoration: underline; */
 }
 
+.projectInfo > div:last-child > h2 {
+  margin-bottom: 1rem;
+}
+
 .imageContainer {
   width: 100%;
   height: 15rem;
