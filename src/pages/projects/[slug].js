@@ -62,6 +62,10 @@ export default class SingleProject extends Component {
       this.setState({ ...this.state, showAll: true })
     }
 
+    const seeLessImages = () => {
+      this.setState({ ...this.state, showAll: false })
+    }
+
     const { selectedImage } = this.state
 
     const finalImages = this.state.showAll
@@ -151,6 +155,11 @@ export default class SingleProject extends Component {
                       <button onClick={seeAllImages}>
                         See all ({displayImages.length})
                       </button>
+                    </div>
+                  )}
+                  {this.state.showAll && displayImages.length > 3 && (
+                    <div className={styles.seeAll}>
+                      <button onClick={seeLessImages}>See Less</button>
                     </div>
                   )}
                 </div>
