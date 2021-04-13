@@ -1,4 +1,37 @@
+import ExTra1 from "../images/Extra/ExTra1.png"
+import ExTra2 from "../images/Extra/ExTra2.png"
+import ExTra3 from "../images/Extra/ExTra3.png"
+import ExTra4 from "../images/Extra/ExTra4.png"
+import ExTra5 from "../images/Extra/ExTra5.png"
+import ExTra6 from "../images/Extra/ExTra6.png"
+import ExTra7 from "../images/Extra/ExTra7.png"
+import ExTra8 from "../images/Extra/ExTra8.png"
+import ExTra9 from "../images/Extra/ExTra9.png"
+import ExTra10 from "../images/Extra/ExTra10.png"
+import ExTra11 from "../images/Extra/ExTra11.png"
+
 const projects = [
+  {
+    title: "ExTra",
+    description:
+      "ExTra is an application which helps you to track your daily incomes and expenses.",
+    social_image: ExTra1,
+    slug: "ExTra",
+    type: "Mobile application",
+    images: [
+      ExTra2,
+      ExTra3,
+      ExTra4,
+      ExTra5,
+      ExTra6,
+      ExTra7,
+      ExTra8,
+      ExTra9,
+      ExTra10,
+      ExTra11,
+    ],
+    technologies: ["React Native", "Expo", "Node js", "MongoDB"],
+  },
   {
     title: "Whatsapp Clone",
     description:
