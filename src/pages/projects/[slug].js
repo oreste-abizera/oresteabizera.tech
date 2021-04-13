@@ -3,6 +3,7 @@ import React, { Component } from "react"
 import {
   FaAngleLeft,
   FaAngleRight,
+  FaDownload,
   FaEye,
   FaGithub,
   FaGlobe,
@@ -211,6 +212,15 @@ export default class SingleProject extends Component {
                         rel="noreferrer"
                       >
                         <FaGlobe></FaGlobe>
+                      </a>
+                    )}
+                    {currentProject.download_url && (
+                      <a
+                        href={currentProject.download_url}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <FaDownload></FaDownload>
                       </a>
                     )}
                   </div>

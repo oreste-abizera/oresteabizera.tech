@@ -32,6 +32,7 @@ const projects = [
     ],
     technologies: ["React Native", "Expo", "Node js", "MongoDB"],
     mobileImages: true,
+    download_url: `//ExTra.apk`,
   },
   {
     title: "Whatsapp Clone",
