@@ -52,8 +52,9 @@
   align-items: center;
   border-radius: 5px;
   transition: var(--mainTransition);
-  margin-top: 1rem;
+  margin-top: 2rem;
   position: relative;
+  padding: 0.1rem;
 }
 
 .imageHover {
@@ -172,6 +173,23 @@
   .modalImageContainer > svg.navigationIcon {
     font-size: 30px;
   }
+
+  .mobileimageContainer {
+    width: 35%;
+    margin-right: 1rem;
+  }
+
+  .imageContainer {
+    background-color: #f5f5f5;
+    border: 2px solid #f5f5f5;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobileimageContainer {
+    width: 25%;
+    margin: 2rem 2rem 0 0;
+  }
 }
 @media screen and (min-width: 992px) {
   .projectInfo > h2 {
@@ -184,5 +202,9 @@
   .imageContainer {
     width: 45%;
     margin-left: 1rem;
+  }
+  .mobileimageContainer {
+    width: 25%;
+    margin: 2rem 2rem 0 0;
   }
 }

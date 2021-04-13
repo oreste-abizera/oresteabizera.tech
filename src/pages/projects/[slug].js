@@ -117,7 +117,14 @@ export default class SingleProject extends Component {
                 <div>
                   <h2>Images</h2>
                   {displayImages.map((value, index) => (
-                    <div className={styles.imageContainer} key={index}>
+                    <div
+                      className={
+                        currentProject.mobileImages
+                          ? `${styles.imageContainer} ${styles.mobileimageContainer}`
+                          : styles.imageContainer
+                      }
+                      key={index}
+                    >
                       <div className={styles.imageHover}>
                         <FaEye
                           onClick={() => changeSelectedImage(index)}

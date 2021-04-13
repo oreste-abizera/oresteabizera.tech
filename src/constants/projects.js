@@ -31,6 +31,7 @@ const projects = [
       ExTra11,
     ],
     technologies: ["React Native", "Expo", "Node js", "MongoDB"],
+    mobileImages: true,
   },
   {
     title: "Whatsapp Clone",
