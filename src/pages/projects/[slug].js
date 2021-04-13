@@ -22,6 +22,23 @@ export default class SingleProject extends Component {
       showAll: false,
     }
   }
+  componentDidMount() {
+    let keylistener = window.addEventListener("keyup", e => {
+      const { code } = e
+      //check if image modal is shown
+      if (this.state.selectedImage !== null) {
+        if (code === "ArrowRight") {
+          this.nextImage()
+        }
+        if (code === "ArrowLeft") {
+          this.previousImage()
+        }
+      }
+    })
+    return () => {
+      window.removeEventListener(keylistener)
+    }
+  }
   render() {
     const { slug } = this.props.params
     const currentProject = this.state.projects.find(
@@ -57,6 +74,9 @@ export default class SingleProject extends Component {
         })
       }
     }
+
+    this.nextImage = nextImage
+    this.previousImage = previousImage
 
     const seeAllImages = () => {
       this.setState({ ...this.state, showAll: true })

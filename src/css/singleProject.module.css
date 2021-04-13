@@ -130,11 +130,11 @@
 }
 
 .modalImageContainer > svg.close {
-  font-size: 30px;
+  font-size: 25px;
   color: var(--primaryColor);
   position: absolute;
-  top: 2px;
-  right: 5px;
+  top: 7px;
+  right: 10px;
   cursor: pointer;
 }
 
