@@ -57,6 +57,26 @@
   padding: 0.1rem;
 }
 
+.seeAll {
+  width: 100%;
+  height: 5rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin-top: 2rem;
+  padding: 0.1rem;
+}
+
+.seeAll button {
+  text-decoration: underline;
+  cursor: pointer;
+  color: var(--primaryColor);
+  border: none;
+  background-color: transparent;
+}
+
 .imageHover {
   position: absolute;
   width: 100%;
@@ -179,6 +199,11 @@
     margin-right: 1rem;
   }
 
+  .seeAll {
+    height: 15rem;
+    width: 35%;
+  }
+
   .imageContainer {
     background-color: #f5f5f5;
     border: 2px solid #f5f5f5;
@@ -189,6 +214,9 @@
   .mobileimageContainer {
     width: 25%;
     margin: 2rem 2rem 0 0;
+  }
+  .seeAll {
+    height: 5rem;
   }
 }
 @media screen and (min-width: 992px) {
@@ -202,6 +230,9 @@
   .imageContainer {
     width: 45%;
     margin-left: 1rem;
+  }
+  .seeAll {
+    width: 45%;
   }
   .mobileimageContainer {
     width: 25%;

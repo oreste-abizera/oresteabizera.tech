@@ -19,6 +19,7 @@ export default class SingleProject extends Component {
     this.state = {
       projects,
       selectedImage: null,
+      showAll: false,
     }
   }
   render() {
@@ -57,7 +58,15 @@ export default class SingleProject extends Component {
       }
     }
 
+    const seeAllImages = () => {
+      this.setState({ ...this.state, showAll: true })
+    }
+
     const { selectedImage } = this.state
+
+    const finalImages = this.state.showAll
+      ? displayImages
+      : displayImages.slice(0, 3)
 
     return (
       <>
@@ -116,7 +125,7 @@ export default class SingleProject extends Component {
               <div className={styles.projectInfo}>
                 <div>
                   <h2>Images</h2>
-                  {displayImages.map((value, index) => (
+                  {finalImages.map((value, index) => (
                     <div
                       className={
                         currentProject.mobileImages
@@ -137,6 +146,13 @@ export default class SingleProject extends Component {
                       ></img>
                     </div>
                   ))}
+                  {!this.state.showAll && displayImages.length > 3 && (
+                    <div className={styles.seeAll}>
+                      <button onClick={seeAllImages}>
+                        See all ({displayImages.length})
+                      </button>
+                    </div>
+                  )}
                 </div>
                 <div>
                   <h2>Project info</h2>
