@@ -201,6 +201,7 @@ export default class SingleProject extends Component {
                         href={currentProject.github_url}
                         target="_blank"
                         rel="noreferrer"
+                        title={`Github | ${currentProject.title}`}
                       >
                         <FaGithub></FaGithub>
                       </a>
@@ -210,6 +211,7 @@ export default class SingleProject extends Component {
                         href={currentProject.site_url}
                         target="_blank"
                         rel="noreferrer"
+                        title={`Visit ${currentProject.title}`}
                       >
                         <FaGlobe></FaGlobe>
                       </a>
@@ -217,8 +219,8 @@ export default class SingleProject extends Component {
                     {currentProject.download_url && (
                       <a
                         href={currentProject.download_url}
-                        target="_blank"
-                        rel="noreferrer"
+                        title={`Download ${currentProject.title}`}
+                        download
                       >
                         <FaDownload></FaDownload>
                       </a>
