@@ -34,6 +34,10 @@ export default class SingleProject extends Component {
         if (code === "ArrowLeft") {
           this.previousImage()
         }
+
+        if (code === "Escape") {
+          this.changeSelectedImage()
+        }
       }
     })
     return () => {
@@ -78,6 +82,7 @@ export default class SingleProject extends Component {
 
     this.nextImage = nextImage
     this.previousImage = previousImage
+    this.changeSelectedImage = changeSelectedImage
 
     const seeAllImages = () => {
       this.setState({ ...this.state, showAll: true })
