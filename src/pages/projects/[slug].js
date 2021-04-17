@@ -51,10 +51,9 @@ export default class SingleProject extends Component {
       project => project.slug === slug
     )
 
-    const displayImages = [
-      currentProject.social_image,
-      ...currentProject.images,
-    ]
+    const displayImages = currentProject
+      ? [currentProject.social_image, ...currentProject.images]
+      : []
 
     const changeSelectedImage = (newImage = null) => {
       this.setState({
@@ -134,7 +133,7 @@ export default class SingleProject extends Component {
         )}
         <Layout>
           <SEO
-            title={currentProject?.title}
+            title={currentProject ? currentProject.title : "Error"}
             description={currentProject?.description}
           ></SEO>
           {!currentProject ? (
