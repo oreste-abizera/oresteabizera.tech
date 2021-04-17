@@ -41,7 +41,7 @@ const projects = [
     url: "https://ao-td.netlify.app/",
     social_image:
       "https://d33wubrfki0l68.cloudfront.net/5fca40d27460a60007508ea3/screenshot.png",
-    slug: "whatsapp-clone",
+    slug: "twika",
     type: "Web application",
     images: [],
     technologies: ["React js", "Node js", "Express js", "MongoDB"],
@@ -60,20 +60,6 @@ const projects = [
     technologies: ["React js", "Firebase", "Material ui"],
     github_url: "https://github.com/oreste-abizera/whatsapp-clone",
     site_url: "https://ao-whatsapp-clone.netlify.app/",
-  },
-  {
-    title: "Redux Cart",
-    description:
-      "This is a simple project for management of cart for an ecommerce application. It contains features including decrementing cart items, removing items from cart, clearing cart, etc.",
-    url: "https://ao-redux-cart.netlify.app/",
-    social_image:
-      "https://d33wubrfki0l68.cloudfront.net/5fa56245f1c7d4012c8f6aea/screenshot.png",
-    slug: "redux-cart",
-    type: "Web application",
-    images: [],
-    technologies: ["React js", "Redux"],
-    github_url: "https://github.com/oreste-abizera/redux-cart",
-    site_url: "https://ao-redux-cart.netlify.app/",
   },
   {
     title: "Upcrew School",
@@ -95,6 +81,33 @@ const projects = [
     ],
     github_url: "https://github.com/oreste-abizera/upcrew",
     site_url: "https://upcrew.netlify.app/",
+  },
+  {
+    title: "Personal Portfolio",
+    description:
+      "This is my portfolio I built to showcase my skills and to make it easier for people to reach me without any difficulties. Some of my featured works and my contact information are here.",
+    url: "https://app.netlify.com/sites/oresteabizera",
+    social_image:
+      "https://d33wubrfki0l68.cloudfront.net/607b3beac29ad0000729feb3/screenshot_2021-04-17-19-51-11-0000.png",
+    slug: "personal-portfolio",
+    type: "Web application",
+    images: [],
+    technologies: ["Gatsby js"],
+    site_url: "https://app.netlify.com/sites/oresteabizera",
+  },
+  {
+    title: "Redux Cart",
+    description:
+      "This is a simple project for management of cart for an ecommerce application. It contains features including decrementing cart items, removing items from cart, clearing cart, etc.",
+    url: "https://ao-redux-cart.netlify.app/",
+    social_image:
+      "https://d33wubrfki0l68.cloudfront.net/5fa56245f1c7d4012c8f6aea/screenshot.png",
+    slug: "redux-cart",
+    type: "Web application",
+    images: [],
+    technologies: ["React js", "Redux"],
+    github_url: "https://github.com/oreste-abizera/redux-cart",
+    site_url: "https://ao-redux-cart.netlify.app/",
   },
   {
     title: "Con Fusion",
