@@ -59,11 +59,13 @@ const projects = [
     type: "Web application",
     images: [],
     technologies: ["React js", "Redux"],
+    github_url: "https://github.com/oreste-abizera/redux-cart",
+    site_url: "https://ao-redux-cart.netlify.app/",
   },
   {
     title: "Upcrew School",
     description:
-      "Upcrew is a project for managing a school activities. Students can attend quizes assigned by their teacher. Teachers can set quizes with timer and deadline. System admin manages students and teachers in the system.",
+      "Upcrew is a project for managing school activities. Students can attend quizes assigned by their teacher. Teachers can set quizes with timer and deadline. System admin manages students and teachers in the system.",
     url: "https://upcrew.netlify.app/",
     social_image:
       "https://d33wubrfki0l68.cloudfront.net/5fb97da139e1490007640e5a/screenshot.png",
@@ -104,6 +106,8 @@ const projects = [
     type: "Web application",
     images: [],
     technologies: ["React js"],
+    github_url: "https://github.com/oreste-abizera/markdown-preview",
+    site_url: "https://react-markdownpreview.netlify.app",
   },
 ]
 

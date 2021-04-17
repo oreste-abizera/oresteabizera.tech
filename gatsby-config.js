@@ -4,6 +4,8 @@
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
 
+const siteUrl = "https://oresteabizera.netlify.app"
+
 module.exports = {
   /* Your site config here */
   siteMetadata: {
@@ -14,7 +16,7 @@ module.exports = {
     keywords: ["Gatsby"],
     twitterUsername: "@AbizeraOreste",
     image: "/defaultBcg.png",
-    siteUrl: "http://oresteabizera.me",
+    siteUrl: siteUrl,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
