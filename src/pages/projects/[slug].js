@@ -11,6 +11,7 @@ import {
 } from "react-icons/fa"
 import Banner from "../../components/Banner"
 import Layout from "../../components/Layout"
+import SEO from "../../components/SEO"
 import projects from "../../constants/projects"
 import * as styles from "../../css/singleProject.module.css"
 
@@ -132,6 +133,10 @@ export default class SingleProject extends Component {
           </div>
         )}
         <Layout>
+          <SEO
+            title={currentProject?.title}
+            description={currentProject?.description}
+          ></SEO>
           {!currentProject ? (
             <>
               <header className={styles.errorHero}>

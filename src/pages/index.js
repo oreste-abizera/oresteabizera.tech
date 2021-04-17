@@ -4,10 +4,12 @@ import ContactMe from "../components/ContactMe"
 import Hero from "../components/Hero"
 import Layout from "../components/Layout"
 import Projects from "../components/Projects"
+import SEO from "../components/SEO"
 export default class Home extends Component {
   render() {
     return (
       <Layout>
+        <SEO title="Home"></SEO>
         <Hero>
           <section
             style={{
