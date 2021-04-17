@@ -17,7 +17,7 @@ const getData = graphql`
   }
 `
 
-const SEO = ({ title, description }) => {
+const SEO = ({ title, description, socialImage }) => {
   const { site } = useStaticQuery(getData)
 
   const {
@@ -34,21 +34,24 @@ const SEO = ({ title, description }) => {
       title={title ? `${title} | ${siteTitle}` : siteTitle}
     >
       <meta name="description" content={description || siteDesc} />
-      <meta name="image" content={image} />
+      <meta name="image" content={socialImage || image} />
       {/* facebook cards */}
       <meta property="og:url" content={siteUrl} />
       <meta property="og:type" content="website" />
-      <meta property="og:title" content={siteTitle} />
-      <meta property="og:description" content={siteDesc} />
-      <meta property="og:image" content={`${siteUrl}${image}`} />
+      <meta property="og:title" content={title || siteTitle} />
+      <meta property="og:description" content={description || siteDesc} />
+      <meta property="og:image" content={socialImage || `${siteUrl}${image}`} />
       <meta property="og:image:width" content="400" />
       <meta property="og:image:height" content="300" />
       {/* twitter card */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:creator" content={twitterUsername} />
-      <meta name="twitter:title" content={siteTitle} />
-      <meta name="twitter:description" content={siteDesc} />
-      <meta name="twitter:image" content={`${siteUrl}${image}`} />
+      <meta name="twitter:title" content={title || siteTitle} />
+      <meta name="twitter:description" content={description || siteDesc} />
+      <meta
+        name="twitter:image"
+        content={socialImage || `${siteUrl}${image}`}
+      />
     </Helmet>
   )
 }

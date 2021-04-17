@@ -135,6 +135,7 @@ export default class SingleProject extends Component {
           <SEO
             title={currentProject ? currentProject.title : "Error"}
             description={currentProject?.description}
+            socialImage={currentProject?.social_image}
           ></SEO>
           {!currentProject ? (
             <>
