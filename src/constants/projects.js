@@ -30,9 +30,22 @@ const projects = [
       ExTra10,
       ExTra11,
     ],
-    technologies: ["React Native", "Expo", "Node js", "MongoDB"],
+    technologies: ["React Native", "Expo", "Node js", "Express js", "MongoDB"],
     mobileImages: true,
     download_url: `/downloads/ExTra.apk`,
+  },
+  {
+    title: "Twika",
+    description:
+      "This is a chat app where a user can create posts and others can like it and comment on it. User is able to edit his/her posts and view the posts he/she created. It's a site of making Hommies.",
+    url: "https://ao-td.netlify.app/",
+    social_image:
+      "https://d33wubrfki0l68.cloudfront.net/5fca40d27460a60007508ea3/screenshot.png",
+    slug: "whatsapp-clone",
+    type: "Web application",
+    images: [],
+    technologies: ["React js", "Node js", "Express js", "MongoDB"],
+    site_url: "https://ao-td.netlify.app/",
   },
   {
     title: "Whatsapp Clone",
@@ -77,7 +90,7 @@ const projects = [
       "Styled components",
       "Bootstrap",
       "Node js",
-      "Express",
+      "Express js",
       "MongoDB",
     ],
     github_url: "https://github.com/oreste-abizera/upcrew",
