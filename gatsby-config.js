@@ -4,7 +4,7 @@
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
 
-const siteUrl = "https://oresteabizera.netlify.app"
+const siteUrl = "https://oresteabizera.tech"
 
 module.exports = {
   /* Your site config here */
