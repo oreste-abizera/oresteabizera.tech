@@ -18,16 +18,16 @@ const PDFReader = ({ file }) => {
 
   return (
     <div>
-      {/* <Loader isLoading={isLoading} /> */}
+      <Loader isLoading={isLoading} />
       <section id="pdf-section" className={styles.pdfWrapper}>
-        {/* <ControlPanel
+        <ControlPanel
           scale={scale}
           setScale={setScale}
           numPages={numPages}
           pageNumber={pageNumber}
           setPageNumber={setPageNumber}
           file={file}
-        /> */}
+        />
         <Document file={file} onLoadSuccess={onDocumentLoadSuccess}>
           <Page pageNumber={pageNumber} scale={scale} />
         </Document>
