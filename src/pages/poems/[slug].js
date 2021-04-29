@@ -1,4 +1,4 @@
-import { navigate } from "gatsby"
+import { Link } from "gatsby"
 import React, { Component } from "react"
 import Banner from "../../components/Banner"
 import Layout from "../../components/Layout"
@@ -12,7 +12,26 @@ export default class SinglePoem extends Component {
       params: { slug },
     } = this.props
     const currentPoem = poems.find(poem => poem.slug === slug)
-    if (!currentPoem) navigate("/poems")
+    if (!currentPoem) {
+      return (
+        <>
+          <Layout>
+            <SEO title="Error"></SEO>
+            <header className={styles.errorHero}>
+              <Banner title="info not found">
+                <Link
+                  to="/"
+                  className="btn-white"
+                  style={{ textDecoration: "none" }}
+                >
+                  Return To Home
+                </Link>
+              </Banner>
+            </header>
+          </Layout>
+        </>
+      )
+    }
     return (
       <>
         <Layout>
