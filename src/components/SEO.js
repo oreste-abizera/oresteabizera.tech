@@ -34,7 +34,7 @@ const SEO = ({ title, description, socialImage }) => {
       title={title ? `${title} | ${siteTitle}` : siteTitle}
     >
       <meta name="description" content={description || siteDesc} />
-      <meta name="image" content={socialImage || image} />
+      <meta name="image" content={`${siteUrl}${image}`} />
       {/* facebook cards */}
       <meta property="og:url" content={siteUrl} />
       <meta property="og:type" content="website" />

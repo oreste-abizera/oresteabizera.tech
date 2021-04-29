@@ -1,0 +1,13 @@
+.poemHero {
+  background: var(--primaryColor);
+  min-height: calc(70vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pdfContainer {
+  width: 100%;
+  overflow-x: auto;
+  min-height: 10rem;
+}
