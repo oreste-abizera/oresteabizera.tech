@@ -27,7 +27,7 @@ export default class Navbar extends Component {
         }
         id="home"
       >
-        <Link to="/#home" className={styles.logo} title="ABIZERA Oreste">
+        <Link to="/" className={styles.logo} title="ABIZERA Oreste">
           <span>A</span>
           <span>O</span>
         </Link>

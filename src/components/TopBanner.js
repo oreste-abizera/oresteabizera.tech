@@ -14,7 +14,7 @@ export default function TopBanner() {
       style={{
         width: "100%",
         height: "3rem",
-        backgroundColor: "#000",
+        backgroundColor: "var(--mainBlack)",
         display: "flex",
         flexDirection: "row",
         justifyContent: "space-between",
